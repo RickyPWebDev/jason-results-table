@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results Summary</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+<body>
+  <main class="container">
+    <section class="result">
+      <h2>Your Result</h2>
+      <div class="score-circle">
+        <span class="score">76</span>
+        <span class="out-of">of 100</span>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section class="summary">
+      <h2>Summary</h2>
+      <ul id="summary-list">
+        <!-- JavaScript dynamically puts data here from data.json -->
+      </ul>
+      <button class="continue-btn">Continue</button>
+    </section>
+  </main>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

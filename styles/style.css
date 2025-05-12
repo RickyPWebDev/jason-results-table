@@ -1,0 +1,136 @@
+@font-face {
+font-family: "HankenGrotesk";
+src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+
+
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'HankenGrotesk', sans-serif;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Result section */
+.result {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+.score-circle {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.out-of {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Summary section */
+.summary {
+  flex: 1;
+  padding: 2rem;
+}
+
+.summary h2 {
+  margin-bottom: 1rem;
+}
+
+#summary-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+#summary-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.reaction {
+  background-color: #fff6f5;
+  color: #d35e4e;
+}
+
+.memory {
+  background-color: #fffbf2;
+  color: #e5a100;
+}
+
+.verbal {
+  background-color: #f2fafa;
+  color: #4e8571;
+}
+
+.visual {
+  background-color: #f3f3fd;
+  color: #5c58a5;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to right, #7857ff, #2e2be9);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.continue-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .score-circle {
+    width: 100px;
+    height: 100px;
+  }
+}
